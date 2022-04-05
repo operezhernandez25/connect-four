@@ -13,6 +13,14 @@
 		EF43C04627E3C32B00ECBDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF43C04427E3C32B00ECBDB8 /* Main.storyboard */; };
 		EF43C04827E3C32C00ECBDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF43C04727E3C32C00ECBDB8 /* Assets.xcassets */; };
 		EF43C04B27E3C32C00ECBDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF43C04927E3C32C00ECBDB8 /* LaunchScreen.storyboard */; };
+		EFAEFF8B27ED53F30031BB25 /* StackViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEFF8A27ED53F30031BB25 /* StackViewContainer.swift */; };
+		EFAEFF8D27ED6F030031BB25 /* PiezaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEFF8C27ED6F030031BB25 /* PiezaView.swift */; };
+		EFAEFF9027ED7AD00031BB25 /* ConectaCuatro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEFF8F27ED7AD00031BB25 /* ConectaCuatro.swift */; };
+		EFD6A33F27F2B6AD00D1FFF2 /* ChunkFive-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD6A33D27F2B6AD00D1FFF2 /* ChunkFive-Regular.otf */; };
+		EFD6A34027F2B6AD00D1FFF2 /* Chunk Five Print.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD6A33E27F2B6AD00D1FFF2 /* Chunk Five Print.otf */; };
+		EFD8B13527F23C6B00397D7F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD8B13427F23C6B00397D7F /* UIColorExtension.swift */; };
+		EFD8B13827F241E900397D7F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD8B13727F241E900397D7F /* Colors.swift */; };
+		EFF9D34D27F7803E007EE8E7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9D34C27F7803E007EE8E7 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EF43C04727E3C32C00ECBDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF43C04A27E3C32C00ECBDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF43C04C27E3C32C00ECBDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAEFF8A27ED53F30031BB25 /* StackViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewContainer.swift; sourceTree = "<group>"; };
+		EFAEFF8C27ED6F030031BB25 /* PiezaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiezaView.swift; sourceTree = "<group>"; };
+		EFAEFF8F27ED7AD00031BB25 /* ConectaCuatro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectaCuatro.swift; sourceTree = "<group>"; };
+		EFD6A33D27F2B6AD00D1FFF2 /* ChunkFive-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChunkFive-Regular.otf"; sourceTree = "<group>"; };
+		EFD6A33E27F2B6AD00D1FFF2 /* Chunk Five Print.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chunk Five Print.otf"; sourceTree = "<group>"; };
+		EFD8B13427F23C6B00397D7F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EFD8B13727F241E900397D7F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EFF9D34C27F7803E007EE8E7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		EF43C03D27E3C32B00ECBDB8 /* Conecta_4 */ = {
 			isa = PBXGroup;
 			children = (
+				EF43C04C27E3C32C00ECBDB8 /* Info.plist */,
+				EFD6A33B27F2B62700D1FFF2 /* Resources */,
+				EFAEFF8827EC95440031BB25 /* Source */,
 				EF43C03E27E3C32B00ECBDB8 /* AppDelegate.swift */,
 				EF43C04027E3C32B00ECBDB8 /* SceneDelegate.swift */,
-				EF43C04227E3C32B00ECBDB8 /* ViewController.swift */,
-				EF43C04427E3C32B00ECBDB8 /* Main.storyboard */,
-				EF43C04727E3C32C00ECBDB8 /* Assets.xcassets */,
 				EF43C04927E3C32C00ECBDB8 /* LaunchScreen.storyboard */,
-				EF43C04C27E3C32C00ECBDB8 /* Info.plist */,
 			);
 			path = Conecta_4;
+			sourceTree = "<group>";
+		};
+		EF43C05D27E58CC800ECBDB8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEFF8F27ED7AD00031BB25 /* ConectaCuatro.swift */,
+				EFD8B13427F23C6B00397D7F /* UIColorExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EFAEFF8827EC95440031BB25 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EFD8B13627F241DA00397D7F /* Constants */,
+				EFD9901627F1087C00144B40 /* HomeScreen */,
+				EF43C05D27E58CC800ECBDB8 /* Helpers */,
+				EFAEFF8927ED53830031BB25 /* GameScreen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EFAEFF8927ED53830031BB25 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EF43C04427E3C32B00ECBDB8 /* Main.storyboard */,
+				EFAEFF8A27ED53F30031BB25 /* StackViewContainer.swift */,
+				EF43C04227E3C32B00ECBDB8 /* ViewController.swift */,
+				EFAEFF8C27ED6F030031BB25 /* PiezaView.swift */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		EFD6A33B27F2B62700D1FFF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF43C04727E3C32C00ECBDB8 /* Assets.xcassets */,
+				EFD6A33C27F2B63400D1FFF2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFD6A33C27F2B63400D1FFF2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EFD6A33E27F2B6AD00D1FFF2 /* Chunk Five Print.otf */,
+				EFD6A33D27F2B6AD00D1FFF2 /* ChunkFive-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EFD8B13627F241DA00397D7F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EFD8B13727F241E900397D7F /* Colors.swift */,
+				EFF9D34C27F7803E007EE8E7 /* Settings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EFD9901627F1087C00144B40 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +207,8 @@
 			files = (
 				EF43C04B27E3C32C00ECBDB8 /* LaunchScreen.storyboard in Resources */,
 				EF43C04827E3C32C00ECBDB8 /* Assets.xcassets in Resources */,
+				EFD6A33F27F2B6AD00D1FFF2 /* ChunkFive-Regular.otf in Resources */,
+				EFD6A34027F2B6AD00D1FFF2 /* Chunk Five Print.otf in Resources */,
 				EF43C04627E3C32B00ECBDB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAEFF8D27ED6F030031BB25 /* PiezaView.swift in Sources */,
+				EFD8B13827F241E900397D7F /* Colors.swift in Sources */,
+				EFD8B13527F23C6B00397D7F /* UIColorExtension.swift in Sources */,
+				EFAEFF9027ED7AD00031BB25 /* ConectaCuatro.swift in Sources */,
 				EF43C04327E3C32B00ECBDB8 /* ViewController.swift in Sources */,
 				EF43C03F27E3C32B00ECBDB8 /* AppDelegate.swift in Sources */,
+				EFF9D34D27F7803E007EE8E7 /* Settings.swift in Sources */,
+				EFAEFF8B27ED53F30031BB25 /* StackViewContainer.swift in Sources */,
 				EF43C04127E3C32B00ECBDB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +383,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +412,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
