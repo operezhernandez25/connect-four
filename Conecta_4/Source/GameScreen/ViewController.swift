@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var restartGameView: UIView!
     
     @IBOutlet weak var restarGameButton: UIImageView!
+    @IBOutlet weak var restartCounterGameButton: UIImageView!
+    
     
     let data = Array(0...7)
     var click:Int = 0;
@@ -29,18 +31,38 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         intialization()
         FocusUserImage(playerID: Settings.jugadorOne)
+        
+        restartCounterGameButton.isUserInteractionEnabled = true;
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(restartCounterGameButtonClick(_:)))
+        restartCounterGameButton.addGestureRecognizer(tapGestureRecognizer1)
+        
         restarGameButton.isUserInteractionEnabled = true
-        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(restartGameButton(_:)))
-        
         restarGameButton.addGestureRecognizer(tapGestureRecognizer)
-            }
+        
+    }
  
 }
 
 //MARK: Extension
 extension ViewController{
       
+    @objc func restartCounterGameButtonClick(_ sender:AnyObject){
+        let refreshAlert = UIAlertController(title: "Reiniciar Contador de victorias", message: "El juego actual sera finalizado", preferredStyle: UIAlertController.Style.alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Si", style: .default, handler: { (action: UIAlertAction!) in
+            
+            self.conectaCuatro.reiniciarContador()
+            self.resetGameFun()
+        }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Cencelar", style: .cancel, handler: { (action: UIAlertAction!) in
+              print("El juego continua")
+        }))
+        present(refreshAlert, animated: true, completion: nil)
+    }
+    
+    
     @objc func restartGameButton(_ sender:AnyObject){
         
         if(conectaCuatro.gameEnd){
@@ -86,8 +108,6 @@ extension ViewController{
 
     //MARK: INITIALITION FUNCTION
     func intialization(){
-        
-        restartGameView.backgroundColor = UIColor(patternImage: UIImage(named: "restart-img.png")!)
         
         imagePlayerOne.backgroundColor = Colors.playerColorOne
         imagePlayerOne.layer.borderColor = UIColor.white.cgColor

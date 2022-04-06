@@ -3,7 +3,6 @@
     <device id="ipad7_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,11 +53,11 @@
                                                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Thl-hI-2zX">
                                                                         <rect key="frame" x="5" y="5" width="85" height="85"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restart" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-5B-2kL">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotating-arrow-to-the-left" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-5B-2kL">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
                                                                             </imageView>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="NZ2-5B-2kL" firstAttribute="top" secondItem="Thl-hI-2zX" secondAttribute="top" id="CN4-LU-S6g"/>
                                                                             <constraint firstItem="NZ2-5B-2kL" firstAttribute="leading" secondItem="Thl-hI-2zX" secondAttribute="leading" id="MSY-12-ou8"/>
@@ -70,7 +69,7 @@
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3G-gL-FG7">
                                                                         <rect key="frame" x="95" y="5" width="85" height="85"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="85" id="8fo-vf-uYV"/>
                                                                             <constraint firstAttribute="height" constant="85" id="cb9-nV-MA5"/>
@@ -78,7 +77,13 @@
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-pc-o1P">
                                                                         <rect key="frame" x="185" y="5" width="85" height="85"/>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stopImage" translatesAutoresizingMaskIntoConstraints="NO" id="o2Q-0b-tep">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="85" id="JYG-QA-TOD"/>
                                                                             <constraint firstAttribute="height" constant="85" id="xx7-yk-aWP"/>
@@ -568,6 +573,7 @@
                         <outlet property="imagePlayerOne" destination="eBE-xi-h6f" id="7Xv-M1-OdH"/>
                         <outlet property="imagePlayerTwo" destination="VEY-16-QH7" id="25O-c5-aEJ"/>
                         <outlet property="restarGameButton" destination="NZ2-5B-2kL" id="sdz-RK-xFd"/>
+                        <outlet property="restartCounterGameButton" destination="o2Q-0b-tep" id="I5A-NF-3vT"/>
                         <outlet property="restartGameView" destination="Thl-hI-2zX" id="WKG-Rf-Ta4"/>
                         <outlet property="txtJugadorActual" destination="CSZ-Cz-Bbu" id="iez-sW-vrL"/>
                     </connections>
@@ -578,13 +584,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="restart" width="170.66667175292969" height="170.66667175292969"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="rotating-arrow-to-the-left" width="512" height="512"/>
+        <image name="stopImage" width="512" height="512"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
